@@ -17,4 +17,11 @@ class EmpresasController extends Controller
 
         $this->set('empresas', $empresas);
     }
+
+    public function novo()
+    {
+        $empresasTable = TableRegistry::get('empresas');
+        $empresa = $empresasTable->newEntity();
+        $this->set('empresa', $empresa);
+    }
 }

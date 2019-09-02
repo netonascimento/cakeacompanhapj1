@@ -1,4 +1,6 @@
+<?php echo $this->Html->link('Cadastrar Empresa', ['controller' => 'empresas', 'action' => 'novo']); ?>
 <table>
+
 <thead>
 <tr>
 <th>CNPJ</th>
